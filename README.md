@@ -148,9 +148,8 @@ Toto nebude v testovacím prostředí fungovat - je zakázáno spouštění jin�
     return 0;
   } 
 ```
-* Slovní popis struktury platných vstupních dat není zcela exaktní. Proto připojujeme i formální popis vstupního jazyka v 
+* Slovní popis struktury platných vstupních dat není zcela exaktní. Proto připojujeme i formální popis vstupního jazyka v EBNF:
 ```
-EBNF:
     input      ::= { whiteSpace } coord { whiteSpace } coord { whiteSpace } coord { whiteSpace } 
     whiteSpace ::= ' ' | '\t' | '\n' | '\r'
     coord      ::= '[' { whiteSpace } decimal { whiteSpace } ',' { whiteSpace } decimal { whiteSpace } ']'
