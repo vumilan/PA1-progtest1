@@ -1,4 +1,4 @@
-# PA1-progtest01
+# PA1-progtest1
 
 Úkolem je vytvořit program, který bude počítat umístění bodů v rovině tak, aby vznikly rovnoběžníky.
 
