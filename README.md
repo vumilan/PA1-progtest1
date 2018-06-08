@@ -12,7 +12,6 @@ Pokud je vstup neplatný, program to musí detekovat a zobrazit chybové hláše
 * chybějící nebo přebývající oddělovače (souřadnice musí být zadaná v hranatých závorkách, hodnoty x a y musí být oddělené čárkou).
 
 ### Ukázka práce programu:
----
 ```
 Bod A:
 [0, 0]
@@ -24,7 +23,6 @@ A': [10,2], rovnobeznik
 B': [-4,2], rovnobeznik
 C': [4,-2], rovnobeznik
 ```
----
 ```
 Bod A:
 [0,0]
@@ -41,7 +39,6 @@ A': [8,4], kosoctverec
 B': [-2,4], rovnobeznik
 C': [2,-4], rovnobeznik
 ```
----
 ```
 Bod A:
 [0,0]
@@ -53,7 +50,6 @@ A': [1,7], ctverec
 B': [7,-1], rovnobeznik
 C': [-7,1], rovnobeznik
 ```
----
 ```
 Bod A:
 [10.5, 10.5] 	 [12.5, 10.5][10.5, 15e+0]
@@ -63,7 +59,6 @@ A': [12.5,15], obdelnik
 B': [8.5,15], rovnobeznik
 C': [12.5,6], rovnobeznik
 ```
----
 ```
 Bod A:
 [0, 0]
@@ -73,7 +68,6 @@ Bod C:
 [10, 10]
 Rovnobezniky nelze sestrojit.
 ```
----
 ```
 Bod A:
 [0, 0]
@@ -85,7 +79,6 @@ A': [2504.322,2258.142], kosoctverec
 B': [-2036.162,2258.142], rovnobeznik
 C': [2036.162,-2258.142], rovnobeznik
 ```
----
 ```
 Bod A:
 [740.865, 887.560]
@@ -97,7 +90,6 @@ A': [694.402,1642.647], ctverec
 B': [1495.952,934.023], rovnobeznik
 C': [-14.222,841.097], rovnobeznik
 ```
----
 ```
 Bod A:
 [-306.710, -894.018]
@@ -107,7 +99,6 @@ Bod C:
 [6016.590, 62619.258]
 Rovnobezniky nelze sestrojit.
 ```
----
 ```
 Bod A:
 [2, 5]
@@ -115,7 +106,6 @@ Bod B:
 [3, abcd]
 Nespravny vstup.
 ```
----
 ```
 Bod A:
 [2, 5]
@@ -125,8 +115,7 @@ Bod C:
 [7 9]
 Nespravny vstup.
 ```
---- 
-Poznámky:
+### Poznámky:
 Ukázkové běhy zachycují očekávané výpisy Vašeho programu (tučné písmo) a vstupy zadané uživatelem (základní písmo). Zvýraznění tučným písmem je použité pouze zde na stránce zadání, aby byl výpis lépe čitelný. Váš program má za úkol pouze zobrazit text bez zvýrazňování (bez HTML markupu).
 Znak odřádkování (\n) je i za poslední řádkou výstupu (i za případným chybovým hlášením).
 Pro reprezentaci hodnot použijte desetinná čísla typu double. Nepoužívejte typ float, jeho přesnost nemusí být dostatečná.
