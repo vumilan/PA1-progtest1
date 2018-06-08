@@ -116,15 +116,15 @@ Bod C:
 Nespravny vstup.
 ```
 ### Poznámky:
-Ukázkové běhy zachycují očekávané výpisy Vašeho programu (tučné písmo) a vstupy zadané uživatelem (základní písmo). Zvýraznění tučným písmem je použité pouze zde na stránce zadání, aby byl výpis lépe čitelný. Váš program má za úkol pouze zobrazit text bez zvýrazňování (bez HTML markupu).
-Znak odřádkování (\n) je i za poslední řádkou výstupu (i za případným chybovým hlášením).
-Pro reprezentaci hodnot použijte desetinná čísla typu double. Nepoužívejte typ float, jeho přesnost nemusí být dostatečná.
-Úlohu lze vyřešit bez použití funkcí. Pokud ale správně použijete funkce, bude program přehlednější a bude se snáze ladit.
-Číselné vstupní hodnoty jsou zadávané tak, aby se vešly do rozsahu datového typu double. Referenční řešení si vystačí s číselnými typy double a int.
-Pro načítání vstupu se hodí funkce scanf, podívejte se na konverze "%c" a " %c" (s mezerou před konverzí, najděte si v manuálu rozdíl).
-Při programování si dejte pozor na přesnou podobu výpisů. Výstup Vašeho programu kontroluje stroj, který požaduje přesnou shodu výstupů Vašeho programu s výstupy referenčními. Za chybu je považováno, pokud se výpis liší. I chybějící nebo přebývající mezera/odřádkování je považováno za chybu. Abyste tyto problémy rychle vyloučili, použijte přiložený archiv se sadou vstupních a očekávaných výstupních dat. Podívejte se na videotutoriál (edux -> výuková videa), jak testovací data použít a jak testování zautomatizovat.
-Hodnoty souřadnic na výstupu Vašeho programu se porovnávají s referenčními hodnotami. Porovnání toleruje malé rozdíly desetinných čísel (menší než 1 ‰).
-Váš program bude spouštěn v omezeném testovacím prostředí. Je omezen dobou běhu (limit je vidět v logu referenčního řešení) a dále je omezena i velikost dostupné paměti (ale tato úloha by ani s jedním omezením neměla mít problém). Testovací prostředí dále zakazuje používat některé "nebezpečné funkce" -- funkce pro spouštění programu, pro práci se sítí, ... Pokud jsou tyto funkce použité, program se nespustí. Možná ve svém programu používáte volání:
+* Ukázkové běhy zachycují očekávané výpisy Vašeho programu (tučné písmo) a vstupy zadané uživatelem (základní písmo). * Zvýraznění tučným písmem je použité pouze zde na stránce zadání, aby byl výpis lépe čitelný. Váš program má za úkol pouze zobrazit text bez zvýrazňování (bez HTML markupu).
+* Znak odřádkování (\n) je i za poslední řádkou výstupu (i za případným chybovým hlášením).
+* Pro reprezentaci hodnot použijte desetinná čísla typu double. Nepoužívejte typ float, jeho přesnost nemusí být dostatečná.
+* Úlohu lze vyřešit bez použití funkcí. Pokud ale správně použijete funkce, bude program přehlednější a bude se snáze ladit.
+* Číselné vstupní hodnoty jsou zadávané tak, aby se vešly do rozsahu datového typu double. Referenční řešení si vystačí s číselnými typy double a int.
+* Pro načítání vstupu se hodí funkce scanf, podívejte se na konverze "%c" a " %c" (s mezerou před konverzí, najděte si v manuálu rozdíl).
+* Při programování si dejte pozor na přesnou podobu výpisů. Výstup Vašeho programu kontroluje stroj, který požaduje přesnou shodu výstupů Vašeho programu s výstupy referenčními. Za chybu je považováno, pokud se výpis liší. I chybějící nebo přebývající mezera/odřádkování je považováno za chybu. Abyste tyto problémy rychle vyloučili, použijte přiložený archiv se sadou vstupních a očekávaných výstupních dat. Podívejte se na videotutoriál (edux -> výuková videa), jak testovací data použít a jak testování zautomatizovat.
+* Hodnoty souřadnic na výstupu Vašeho programu se porovnávají s referenčními hodnotami. Porovnání toleruje malé rozdíly desetinných čísel (menší než 1 ‰).
+* Váš program bude spouštěn v omezeném testovacím prostředí. Je omezen dobou běhu (limit je vidět v logu referenčního řešení) a dále je omezena i velikost dostupné paměti (ale tato úloha by ani s jedním omezením neměla mít problém). Testovací prostředí dále zakazuje používat některé "nebezpečné funkce" -- funkce pro spouštění programu, pro práci se sítí, ... Pokud jsou tyto funkce použité, program se nespustí. Možná ve svém programu používáte volání:
 ```
   int main ( int argc, char * argv [] )
   {
@@ -148,7 +148,7 @@ Toto nebude v testovacím prostředí fungovat - je zakázáno spouštění jin�
     return 0;
   } 
 ```
-Slovní popis struktury platných vstupních dat není zcela exaktní. Proto připojujeme i formální popis vstupního jazyka v EBNF:
+* Slovní popis struktury platných vstupních dat není zcela exaktní. Proto připojujeme i formální popis vstupního jazyka v EBNF:
     input      ::= { whiteSpace } coord { whiteSpace } coord { whiteSpace } coord { whiteSpace } 
     whiteSpace ::= ' ' | '\t' | '\n' | '\r'
     coord      ::= '[' { whiteSpace } decimal { whiteSpace } ',' { whiteSpace } decimal { whiteSpace } ']'
